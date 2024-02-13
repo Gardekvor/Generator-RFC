@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Practica 2</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Practica 2 - RFC</legend>
+            <table>
+                <tr>
+                    <td><label>Nombre: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtnom" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label>Apellido Paterno: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtapp" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label>Apellido Materno: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtapm" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label>Fecha de Nacimiento: </label></td>
+                    <tr>
+                        <td><input type="date" id="dtfn" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><button id="b1" onclick="generarRFC()">Generar RFC</button></td>
+                </tr>                
+                <tr>
+                    <td><label>RFC: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtres" size="30" readonly></td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>AJAX - API REST</legend>
+            <table>
+                <tr>
+                    <td><label>ID : </label></td>
+                    <tr>
+                        <td><input type="text" id="txtid" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><button id="b2" onclick="API()">Consultar</button></td>
+                </tr>   
+                <tr>
+                    <td><label>Nombre: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtnom1" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><label>Email: </label></td>
+                    <tr>
+                        <td><input type="text" id="txtemail" size="30" maxlength="30"></td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
